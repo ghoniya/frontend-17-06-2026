@@ -1,0 +1,155 @@
+ 1 img.png
+   img= a common abbreviation for image
+   png= the file extention. png(portable network graphics)
+
+ 2 what is IDE list out all type
+   IDE (intergrated development environment)is a software application that helps programmers write,test  and manage code in one place
+
+    Code editor (write code)
+    Compiler or interpreter integration (run code)
+    Build automation tools
+    Version control integration (e.g., Git)
+
+    Examples: Visual Studio
+
+    types of IDEs by Programming Language 
+      java 
+      python
+      c++
+      java script
+      android devlopment
+      apple devlopment
+      
+                  IDE     
+              
+              /    |    \
+             /     |     \                   
+            v      v      v
+         Java   Python   C++
+
+      3 what is LAN WAN and MAN
+
+
+      1. LAN (Local Area Network)
+
+        A LAN connects computers and devices within a small area such as a home, office, school, or building.
+
+        Example
+        Computers connected in a school computer lab
+        Home Wi-Fi network
+
+        2. MAN (Metropolitan Area Network)
+
+         A MAN connects multiple LANs across a city or metropolitan area.
+
+        Example
+        Network connecting different branches of a bank within a city
+        City-wide cable TV network
+
+        3. WAN (Wide Area Network)
+
+        A WAN connects computers and networks over very large distances, such as countries or continents.
+
+        Example
+        Corporate network connecting offices worldwide
+
+        4.What is SDLC LIFE CYCLE FOR
+        SDLC (Software Development Life Cycle)
+
+        SDLC stands for Software Development Life Cycle. It is a structured process used to develop software systematically, efficiency, and timely delivery
+
+        Purpose of SDLC
+        Improve software quality
+        Complete projects on time
+        
+        5. what is URL list out all types
+        URL stands for Uniform Resource Locator. It is the address used to locate a resource on the Internet, such as a web page, image, video, or file.
+
+        Example URL
+         https://www.example.com     
+
+         Types of URLs
+         Absolute URL
+         Complete address including protocol and domain.
+  
+         Relative URL
+         Relative to the current page.
+
+         6 what is broswers list out all type
+         A web browser is a software application used to access and view websites on the internet. It lets you open URLs, search online, and interact with web page.
+
+         ─────────────────┐
+      │   WEB BROWSER   │
+      │ (Common browser)│
+      └─────────────────┘
+              │
+     ┌────────┼────────┐
+     ▼        ▼        ▼
+    google   mozila   microsort and
+   (chrome)  firefox  safari
+
+   7 what is google  business managment
+
+   8.what is protocol list out all type 
+    A protocol is a set of rules that defines how data is transmitted and received between devices in a network.
+     Types of Protocols
+     1. Communication Protocols
+      These handle basic data transfer:
+      2. Security Protocols
+      3. Routing Protocols
+      4. Wireless Protocols
+      5. Application Protocols
+      6.Industrial Protocols
+
+        9.what is seo.md
+      Meaning of SEO
+
+      SEO (Search Engine Optimization) is the process of improving a website so it ranks higher on search engines like Google.
+
+      SEO.md is usually a Markdown file (.md) used to document Search Engine Optimization (SEO) guidelines for a website, project, or software system.
+
+      10 what is software list out all type
+      Software is a set of instructions or programs that tell a computer what to do. It is the non-physical part of a computer system.
+
+      Hardware = physical parts (keyboard, CPU)
+      Software = programs that run on hardware
+
+      11 what is w3c.md
+
+      W3C.md is not a standard official file, but it usually refers to a Markdown documentation file that explains W3C standards or guidelines in a project.
+
+      12 what is web server list out all type
+
+      A web server is a system (hardware + software) that stores, processes, and delivers web pages to users over the internet using HTTP/HTTPS.
+
+            Web Server     
+                |
+      
+         |         |       |
+         v         v       v
+       HTML      CSS    JS Files
+
+      13 what is website hosting.md
+
+      Website hosting is a service that stores your website files (HTML, CSS, images, code) on a server and makes them accessible on the internet.
+
+      14 what is website list out types
+      A website is a collection of web pages connected together and accessed through the internet using a browser like Chrome or Firefox.
+
+      Types of Websites
+      1. Static Website : html css
+      2. Dynamic Website : uses bakend PHP, Python, Node.js + database
+      4. Blog Website: Used for articles and posts
+      5. Portfolio Website :Shows personal skills and projects. Used by freelancers and developers
+
+      15 what is www.md 
+  
+       WWW (World Wide Web) is a system of interlinked web pages and websites that are accessed through the internet using a browser.
+
+       www.md is not an official internet standard file, but in many projects it is used as a Markdown documentation file that explains the World Wide Web (WWW) or how a website’s web layer works.
+
+      
+
+
+   
+
