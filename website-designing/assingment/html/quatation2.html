@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    form{
+        width:30%;
+        height: auto;
+    }
+    input,textarea,select{
+        width:40%;
+        padding:5px;
+    }
+    select{
+        width:93%;
+        padding:5px;
+    }
+    input[type="submit"]{
+        width: 30%;
+        height:auto;
+        background-color: green;
+        color: aliceblue;
+        padding:15px;
+    }
+.rating{
+    width:15%;
+    padding:none;
+    margin:none;
+}
+#email{
+    width:20%;
+    height:auto;
+}
+button{
+    border:none;
+    background-color: darkorange;
+    padding: 10px;
+    
+}
+
+     
+    </style>
+</head>
+<body>
+    <!-- Q-1 Create a simple HTML form named foodReview.html that lets users submit a review for a restaurant, including their name, email, and a text area for comments. Use the POST method. -->
+     <h1>Food review form</h1>
+     <form action="foodreview.html">
+        <input type="text"placeholder="Name" >
+        <br><br>
+        <input type="text"placeholder="Email">
+        <br><br>
+        <textarea name="message"  placeholder="message">
+        </textarea>
+        <br><br>
+        <input type="Submit" value="Send">
+     </form>
+     <!-- Q-2 Build a login form for a music streaming app with input fields for username and password. Set the password input type to 'password' and make both fields required using HTML validation attributes. -->
+
+     <h1>Login Form</h1>
+     <form>
+        <input type="text"placeholder="User name" required>
+        <br><br>
+        <input type="password"placeholder="password"required>
+        <br><br>
+        <textarea name="message"  placeholder="message"required>
+        </textarea>
+        <br><br>
+        <input type="submit" value="Login">
+     </form>
+     <!-- Q-3 Design a feedback form for a movie booking site with radio buttons to rate your experience (1-5 stars) and checkboxes to select which features you used (e.g., seat selection, food order, payment).-->
+      <h1> share  your experiens </h1>
+      <br><br>
+        <input type="text"placeholder=" Eanter  your Name">
+        <br><br>
+        <input type="text"placeholder=" Eanter your Email">
+        <br><br>
+        <input type="text"placeholder=" Phone no">
+        <br><br>
+        <h1>rate of out 5</h1>
+        <div class="rating">
+            <label><input type="radio" name="rating" value="1"> 1</label>
+            <label><input type="radio" name="rating" value="2"> 2</label>
+            <label><input type="radio" name="rating" value="3"> 3</label>
+            <label><input type="radio" name="rating" value="4"> 4</label>
+            <label><input type="radio" name="rating" value="5"> 5</label>
+          </div>
+
+        <h1>select features</h1>
+        <div class="rating"> 
+            <label><input type="checkbox" name="features" value="Selest seat"> Selest seat</label>
+            <label><input type="checkbox" name="features" value="food order"> food order</label>
+            <label><input type="checkbox" name="features" value="online payment"> online payment</label>
+            <label><input type="checkbox" name="features" value="laser projection"> laser projection</label>
+       </div>
+       <!-- 4.Add an email input field to your form that only accepts emails ending with '@gmail.com' using the pattern attribute.<br><br><em><strong>Hint:</strong> Use pattern="[a-zA-Z0-9._%+-]+@gmail\.com" for the input.</em> -->
+         <br>
+         <h1>Email input field</h1>
+         <br>   
+        <input type="Email" placeholder="Enter your email" id="email" pattern="a-zA-Z0-9._%+-]+@"  title="please enter valid email"required>
+        <br><br>
+        <button type="Submit">submit</button>
+
+        <!-- 5.Explain in 2-3 lines the difference between front-end form validation using HTML attributes (like required and pattern) and server-side validation after form submission. Give one example of a risk if you rely only on front-end validation. -->
+        
+         <h1>defination</h1>
+
+         <p>The <strong>  html attribute</strong> checks if a form field is empty or filled before submission.</p>
+         <p> The <strong>pattern attribute </strong> the filled text using a Expression</p>
+         <p> The <strong>server-side validation </strong> process of checking user-submitted data on the web server</p>
+         <!-- example -->
+         <input  type="text" placeholder="Enter your name" required pattern="a-zA-Z0-9._%+-]+@" >
+         
+</body>
+</html>
