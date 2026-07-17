@@ -20,22 +20,30 @@
         <iframe width="560" height="315" src="https://www.youtube.com/embed/PImGfI5yaVY?si=QiWLYT7pf8ksNLbE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
         <!-- 3.Create a short video clip (can be a phone recording or any royalty-free video), embed it on your HTML page using the <video> tag, and set it to autoplay and loop. -->
-            <h1>short vidio clip</h1>
-            <video width="500" height="380" loop>
-                <source src="vedio/video1.mp4" type="vidio/mp4">
+            <h1>short video clip</h1>
+            <video width="500" height="380" controls loop>
+                 <source src="\short video.mp4" type="video/mp4">    
             </video>
             <br>
 
             <!-- 4.Build a mini music player section for a 'Chill Beats' playlist: embed two different audio files using <audio> tags, and ensure both have controls but do NOT autoplay. -->
                 <h1>Audio clip </h1>
+                <h2>Chill beats playlist 🎶 </h2>
                 <audio controls>
-                    <source src="Aas Paas Khuda.mp3"type="audio/mp3" >
+                    <source src="chill-music-1.mp3" type="audio/mp3" >
                     
                 </audio>
+                <br>
                 <audio controls>
-                    <source src="Aas Paas Khuda.mp3"type="audio/mp3" >
+                    <source src="chill music-2.mp3"type="audio/mp3" >
                     
                 </audio>
+                <!-- 5.Modify your HTML page so that the embedded video only displays playback controls and does not show any other controls like download or fullscreen.<br><br><em><strong>Hint:</strong> Use the controlsList attribute and set appropriate values.</em> -->
+                 <h1><em> video</em></h1>
+                 <br>
+                <video width="500" height="380" controlslist="value">
+                    <source src="/short video.mp4" type="video/mp4">
+                  </video>
 
 </body>
 </html>
