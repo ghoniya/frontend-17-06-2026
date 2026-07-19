@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <!-- 1. Embed an audio file of your favorite song into a new HTML file using the <audio> tag, and make sure playback controls are visible. -->
+    <h1> song 🎶</h1>
+    <div>
+        <audio controls>
+            <source src="Aas Paas Khuda.mp3"type="audio/mp3" >
+            
+        </audio>
+    </div>
+    <!-- 2.Add a YouTube video (such as an IPL highlights clip) to your HTML page using an <iframe>, and set the width to 560 and height to 315 pixels.<br><br><em><strong>Hint:</strong> Use the 'Share' > 'Embed' option on YouTube to get the correct iframe code.</em>  -->
+        <br>
+        <h1>IPL highlights clip</h1>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/PImGfI5yaVY?si=QiWLYT7pf8ksNLbE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+        <!-- 3.Create a short video clip (can be a phone recording or any royalty-free video), embed it on your HTML page using the <video> tag, and set it to autoplay and loop. -->
+            <h1>short video clip</h1>
+            <video width="500" height="380" controls loop>
+                 <source src="\short video.mp4" type="video/mp4">    
+            </video>
+            <br>
+
+            <!-- 4.Build a mini music player section for a 'Chill Beats' playlist: embed two different audio files using <audio> tags, and ensure both have controls but do NOT autoplay. -->
+                <h1>Audio clip </h1>
+                <h2>Chill beats playlist 🎶 </h2>
+                <audio controls>
+                    <source src="chill-music-1.mp3" type="audio/mp3" >
+                    
+                </audio>
+                <br>
+                <audio controls>
+                    <source src="chill music-2.mp3"type="audio/mp3" >
+                    
+                </audio>
+                <!-- 5.Modify your HTML page so that the embedded video only displays playback controls and does not show any other controls like download or fullscreen.<br><br><em><strong>Hint:</strong> Use the controlsList attribute and set appropriate values.</em> -->
+                 <h1><em> video</em></h1>
+                 <br>
+                <video width="500" height="380" controlslist="value">
+                    <source src="/short video.mp4" type="video/mp4">
+                  </video>
+
+</body>
+</html>
