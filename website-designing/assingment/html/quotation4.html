@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+     nav{
+        width:100%;
+        height:auto;
+        background-color: rgb(241, 32, 32);
+        display: flex;
+        flex-wrap:wrap;
+     }
+     h2{
+        color: rgb(64, 161, 245);
+        margin-left: 5%;
+     }
+    
+    
+    button{
+        width:10%;
+        height:40px;
+        margin-left:70%;
+        margin-top: 12px;
+        background-color: rgb(241, 32, 32);
+        border:1;   
+    }
+    
+     section{
+        display: flex;
+        flex-wrap: nowrap;
+        background-color:white;
+    } 
+    div{
+        width: 50%;
+        height:auto;
+        margin-top:10%;
+        margin-left: 5%;
+        background-color:white;   
+    
+    }
+    aside{
+        width:50%;
+        height: auto;
+    }
+    img{
+        width:70%;
+    }
+    footer{
+        background-color: rgb(241, 32, 32);
+        text-align: center;
+        padding-bottom: 30px;
+        padding:10px;
+        
+    }
+    #movie{
+        padding: 30px;
+        display: flex;
+        flex-wrap: nowrap;
+        
+    }
+    nav a{
+        padding: px;
+        display: flex;
+        flex-wrap:wrap;
+        padding: 30px;
+        font-size: 20px;
+    }
+    h1{
+        text-align: center;
+    }
+    .restaurant{
+        width: 25%;
+        height: 60%;
+        background-color: darkkhaki;
+        margin-left: 40%;
+        ;
+    }
+    .food{
+        height:80px;
+        margin-bottom: 30px;
+        
+        
+    }
+    nav a{
+        padding: 40px;
+        font-size: 25px;
+           
+    }
+    main{
+        background-color: darkorange;
+    
+    } 
+     #song{
+        color:white;
+        display: flex;
+        align-items: center;
+        padding: 15px 30px;
+        background-color: black;
+         
+     }
+     nav a{
+        color: white;
+        text-decoration: none;
+         margin-left: 20px;
+        font-weight: bold;  
+
+     }
+     #sss{
+        display: flex;
+        align-items: center;
+        margin-right: 20%;
+        
+     }
+     img{
+        margin-left: 5%;
+     }
+     
+        </style>
+
+    <!-- 1.Create a new HTML file called music.html that includes a header with your favorite music app's logo (Spotify, Gaana, etc.), a navigation bar with links to Home, Playlists, and Contact, a main content section describing your top 3 favorite songs, and a footer with a copyright notice. 
+     -->
+    <header id="song"> 
+         
+        <img src="https://upload.wikimedia.org/wikipedia/commons/8/84/Spotify_icon.svg" width="20px" height="40px">
+      <h1 id="sss">Spotify</h1>  
+    
+    <nav >
+        <a href="home.html">Home</a>
+        <a href="playlist.html">Playlists</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+<main>
+    <h1>My Top 3 Favorite Songs</h1>
+
+    <div class="song">
+        <h2>1.saans</h2>
+        <p><strong>Artist:</strong> shreya ghoshal</p>
+        <p>this is a bollywood song.</p>
+    </div>
+
+    <div class="song">
+        <h2>2. neki ki rah</h2>
+        <p><strong>Artist:</strong> arjit singh</p>
+        <p>this is a bollywood song.</p>
+    </div>
+
+    <div class="song">
+        <h2>3. dil diya gallan</h2>
+        <p><strong>Artist:</strong> atif ashlam</p>
+        <p>this is a bollywood song.</p>
+    </div>
+</main>
+
+<footer>
+    <p>&copy; 2026 My Favorite Music. All Rights Reserved.</p>
+</footer>
+<br>
+
+     <!-- 2.Build a movies.html page with a header, navigation bar, content section listing your top 5 movies (with short descriptions), and a footer. Add internal links in the navbar to about.html and contact.html (create simple placeholder pages for both). -->
+
+    <nav id="movie">
+        <a href="home.html">Home</a> 
+        <a href="about.html">About</a> 
+        <a href="contact.html">Contact</a>
+    </nav>
+    <main>
+        <h1>Top 5 movies</h1>
+        <br><br>
+         <h3>titanic</h3>
+        <p>this is a wonderfull movie</p>
+        <h3>dhamal</h3>
+        <p>this is a wonderfull movie</p>
+        <h3>bhagban</h3>
+        <p>this is a wonderfull movie</p>
+        <h3>The Dark Knight</h3>
+        <p>this is an action movie</p>
+        <h3>Inception</h3>
+        <p>this is a wonderfull movie</p>
+    </main> 
+
+    <footer>
+        <p> Movie Website. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
+<br>
+<!-- 3.On your movies.html page, add anchor links that let users jump directly to each movie's description within the page (for example, clicking on a movie name in a list at the top scrolls to its section below).<br><br><em><strong>Hint:</strong> Use the id attribute on each movie section and link to it with #id in your anchor tags.</em> -->
+ 
+<!-- 4. Create a food.html page inspired by Zomato, with sections for header, navigation, main content (list 3 restaurants with images), and footer. Make sure the navigation bar links to at least two other pages you created  -->
+ <header> 
+    <h1> Food hub</h1>
+  </header>
+  <nav class="food">
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="food.html">Food</a>
+  </nav>
+  <main>
+      <div class="restaurant">
+          <h1>indian retaurant </h1>
+          <img src="images8.jpg" alt="indian retaurant">
+          <p>Delicious Indian curries, biryani, and tandoori dishes.</p>
+      </div>
+      <div class="restaurant">
+          <h1>fast food retaurant</h1>
+          <img src="images4.jpg" alt="fast food retaurant">
+          <p>Fresh burgers, fries, pizzas, and refreshing drinks.</p>
+      </div>
+      <div class="restaurant">
+          <h1>Italian retaurant</h1>
+          <img src="images6.jpg" alt="Italian retaurant">
+          <p>Italian pizza, pasta, and desserts.</p>
+      </div>
+    </main>
+      <footer>
+          <p> 2026 Food Delivery. All Rights Reserved.</p>
+      </footer>
+       
+    
+</body>
+</html>
