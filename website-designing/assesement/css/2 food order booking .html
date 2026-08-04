@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        <!-- Structure the page using semantic HTML5 elements: <header> for the page title, <main>
+        wrapping the form, and <footer> with a copyright line.
+
+        Build a form containing: a text <input> for customer name, a <textarea> for delivery address, a
+        <select> dropdown with at least three delivery time slots, and a checkbox input labelled 'Leave
+        at door if not available'.
+
+        Apply the required attribute to the name input and the address textarea so the browser
+        prevents submission when either is empty.
+
+        Include a clearly labelled Submit button and a Reset button that clears all fields; both must
+        use the correct HTML type attribute. -->
+         <h1>Form</h1>
+        <input type="text" placeholder="Enter your name">
+        <br><br>
+        <textarea name="feedback" placeholder="type here"> </textarea>
+        <br>
+        <h1> select your time</h1>
+        <select name="time"> 
+            <option value="8:00AM TO 10:00PM"> 8:00AM TO 10:00PM</option>
+            <option value="11:00AM TO 2:00PM">11:00AM TO 2:00PM </option>
+            <option value="2:00PM TO 6:00PM"> 2:00PM TO 6:00PM</option>
+        </select>
+        <br><br>
+        <label><input type="checkbox" vlalue="Leave at door if not available"> Leave at door if not available
+    </label>
+    <hr>
+    <!-- Apply the required attribute to the name input and the address textarea so the browser
+    prevents submission when either is empty. -->
+
+    <input type="text" placeholder="Enter your name" required>
+    <br><br>
+    <textarea name="feedback" placeholder="type here" required>
+         </textarea>
+         <!-- Include a clearly labelled Submit button and a Reset button that clears all fields; both must
+         use the correct HTML type attribute. --> 
+         <br><br>
+         <button type="Submit">submit</button>
+         <button type="Reset">Reset</button>
+         
+
+
+
+</body>
+</html>

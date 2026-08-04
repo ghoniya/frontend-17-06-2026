@@ -1,0 +1,223 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+header{
+    width:100%;
+    height:auto;
+    display: flex;
+    background-color:black;
+}
+#nav-app{
+    background-color: black;
+    height:60px;
+    color: aliceblue;
+    padding: 10px;
+
+
+}
+nav ul li{
+    display:inline-block;
+    padding:  15px 20px;
+    margin-left: 20px;
+}
+#hero-section{
+    width:80%;
+    height:255px;
+    margin-left:120px;
+    background: url(https://t3.ftcdn.net/jpg/07/58/26/62/360_F_758266271_yksdY7RLYIIY6jofjJorjylEDOvgcuze.jpg)no-repeat;;
+    background-size: cover;
+    border-radius: 20px;
+    position: relative;
+    margin-top: 5%;
+    border: solid 8px rgb(196, 18, 18); 
+} 
+ .hero{
+    margin-left:5%;
+    margin-top:5%;
+    color: aliceblue;
+ }
+ button{
+    background-color: rgb(43, 194, 55);
+    font-size:20px;
+    border:0;
+ }
+ button:hover{
+    background-color: rgb(247, 74, 74);
+    color: white;
+    transition-duration: 1.5;
+ }
+ .head{
+    text-align: center;
+    
+ }
+ .perent
+{
+grid-template-columns: auto auto;
+width: 100%;
+height: auto;
+display: flex;
+flex-wrap: wrap;
+margin:6%;
+} 
+.child1
+{
+ width: 20%;
+ height: auto;
+ border-radius: 20px;
+ margin: 5px;
+ margin-top: 3%;
+ border:2px solid rgb(126, 123, 116);    
+
+}
+.child2
+{
+ width: 20%;
+ height: auto;
+ border-radius: 20px;
+ margin: 5px;
+ margin-top: 3%;
+ border:2px solid rgb(65, 64, 62);
+}
+.child3
+{
+ width: 20%;
+ height: auto;
+ border-radius: 20px;
+ margin: 5px;
+ margin-top: 3%;
+ border:2px solid rgb(150, 148, 143)
+}
+.child4
+{
+ width: 20%;
+ height: auto;
+ border-radius: 20px;
+ margin: 5px;
+ margin-top: 4%;
+ border:2px solid rgb(87, 86, 83);
+}
+img{
+display: block;
+margin: 0 auto;
+margin-top:15%;
+}
+h2{
+text-align: center;
+}
+.footer-txt1{
+    background-color:black;
+    color: aliceblue;
+    padding:10px;
+    text-align: center;
+}
+@media only screen and (min-width:400px) and (max-width:768px){
+    header{
+        width:100%;
+        height:auto;
+        display: flex;
+        background-color:black;
+    }
+    #nav-app{
+        background-color: black;
+        height:60px;
+        color: aliceblue;
+        padding: 10px;
+    
+    
+    }
+    nav ul li{
+        display:inline-block;
+        padding:  15px 20px;
+        margin-left: 20px;
+    }
+    #hero-section{
+        width:80%;
+        height:200px;
+        margin-left:40px;
+        background: url(https://t3.ftcdn.net/jpg/07/58/26/62/360_F_758266271_yksdY7RLYIIY6jofjJorjylEDOvgcuze.jpg)no-repeat;;
+        background-size: cover;
+        border-radius: 20px;
+        position: relative;
+        margin-top: 2%;
+        border: solid 8px rgb(196, 18, 18); 
+    } 
+     .hero{
+        margin-left:5%;
+        margin-top:5%;
+        color: aliceblue;
+     }
+     button{
+        background-color: rgb(43, 194, 55);
+        font-size:20px;
+        border:0;
+     }
+     button:hover{
+        background-color: rgb(247, 74, 74);
+        color: white;
+        transition-duration: 1.5;
+     }
+     .head{
+        text-align: center;
+        
+     }
+     .perent
+    {
+    grid-template-columns: auto auto;
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: auto auto;
+    } 
+    .child1
+    {
+     width: 80%;
+     height: auto;
+     border-radius: 20px;
+     margin: 5px;
+     margin-top: 3%;
+     border:2px solid rgb(126, 123, 116);    
+    
+    }
+    .child2
+    {
+     width: 80%;
+     height: auto;
+     border-radius: 20px;
+     margin: 5px;
+     margin-top: 3%;
+     border:2px solid rgb(65, 64, 62);
+    }
+    .child3
+    {
+     width: 80%;
+     height: auto;
+     border-radius: 20px;
+     margin: 5px;
+     margin-top: 3%;
+     border:2px solid rgb(150, 148, 143)
+    }
+    .child4
+    {
+     width: 80%;
+     height: auto;
+     border-radius: 20px;
+     margin: 5px;
+     margin-top: 4%;
+     border:2px solid rgb(87, 86, 83);
+    }
+    img{
+    display: block;
+    margin: 0 auto;
+    margin-top:15%;
+    }
+    h2{
+    text-align: center;
+    }
+    .footer-txt1{
+        background-color:black;
+        color: aliceblue;
+        padding:10px;
+        text-align: center;
+    }
+}
