@@ -1,0 +1,107 @@
+body{
+    margin:0;
+    padding:0;
+}
+#artist-card{
+    width:20%;
+    height:250px;
+    margin:auto;
+    margin-top: 3%;
+    border:2px solid black;
+    border-radius:20px;   
+}
+
+ .artist-photo img{
+    width:100px;
+    height:auto;
+    margin: auto;
+    margin-left: 20%;    
+}
+.artist-detail{
+    margin-left:20%;
+} 
+#flipcard{
+    width:20%;
+    height:250px;
+    margin:auto;
+    border:2px solid;
+    border-radius:10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-top: 3%;
+}
+#flipcard:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px 6px rgba(0, 0, 0, 0.28);
+  }
+.product-photo img{
+    width:50%;
+    height:auto;
+    margin:auto;
+    filter: blur(2px);
+    
+}
+.product-detail{
+    margin-left:5%;
+
+}
+#movie-info{
+    width:30%;
+    height:250px;
+    margin:auto;
+    border: 2px solid;
+    margin-top:2%;
+   
+}
+.movie-card{
+    margin-left:4%;
+    padding:10px;
+    margin-top: 5%;
+    
+}
+.movie-card h2{
+    margin-left:3%;
+    text-shadow:10px 15px 18px rgba(75, 49, 196, 0.5);
+}
+.movie-card button{
+    background-color: rgb(101, 185, 17);
+    color: aliceblue;
+    padding:10px;
+    border:none;
+}
+.restaurant-card{
+    width:30%;
+    height:250px;
+    margin:auto;
+    border:2px solid;
+    border-radius:10px;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIGgbGpmfLojX7v2Tg1pfPOZrZ9Am423wbji3Qco-ixw&s=10 );
+    background-size: cover;
+    background-position: center;
+    
+    
+
+}
+.restaurant-name{
+    color: rgb(230, 222, 222);
+    font-size:20px;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    
+}
+.ipl-card{
+    width:30%;
+    height:300px;
+    margin: auto;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkHpuedfbscXyg61FMnObr7Mgi6tnm0AH-kvTRXXXKhw&s=10");
+    border: 2px solid;
+    border-radius:10px;
+    box-shadow: 0px 10px 10px 10px red;
+    margin-bottom: 5%;
+
+}
+.ipl-head h1{
+    text-align: center;
+}
+ 
