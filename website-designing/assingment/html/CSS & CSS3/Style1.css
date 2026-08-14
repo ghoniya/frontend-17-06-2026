@@ -1,0 +1,31 @@
+body{
+    margin:0;
+    padding:0;
+
+}
+h1 {
+    background-color: #e23744;
+    color: white;
+    padding: 15px;
+}
+
+p {
+    font-size: 18px;
+}
+/* Grouping selector: applies the same border to the heading and menu items */
+h1, .menu-item {
+    border: 3px solid rgb(52, 26, 196);
+    padding: 8px;
+}
+  /* Class selector styles all menu items */
+  .menu-item {
+    font-style: italic;
+    color: green;
+}
+
+/* ID selector highlights one special item */
+#special-item {
+    background-color: yellow;
+    color: red;
+    padding: 5px;
+}

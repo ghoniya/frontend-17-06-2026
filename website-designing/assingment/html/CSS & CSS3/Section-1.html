@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Style1.css">
+    <style>
+        p{
+            color: rgb(226, 43, 171);
+        }
+    </style>
+</head>
+<body>
+<!-- 1.Create an HTML file with three sections: a Zomato-style restaurant name in a heading, a short 
+description in a paragraph, and a menu list. Link an external CSS file and use it to set a unique background color for the heading and a different font size for the paragraph.
+
+2.Add both an inline style and an internal CSS style to the same paragraph in your HTML file, each setting a different text color. Observe which color is displayed and explain why in a comment inside your HTML.<br><br><em><strong>Hint:</strong> This tests your understanding of CSS cascading and priority.</em>
+
+3.Use class selectors in your CSS to style all menu items (for example, set their font style to italic and color to green). Then, use an id selector to highlight one special item with a different background.
+
+4.Group the heading and all menu items in a single CSS rule to apply a border to them at once, without repeating the border property in multiple places.<br><br><em><strong>Hint:</strong> Use a grouping selector to combine the elements.</em> -->
+
+<section>
+    <h1>The Grand restaurant</h1>
+
+    <p style="color: blue;">Spice Garden is a cozy restaurant serving delicious Indian dishes made with fresh ingredients and authentic flavors.</p>
+
+    <ul>
+        <li id="special-item"> Pneer masala</li>
+        <li class="menu">Paneer Tikka</li>
+        <li class="menu">Pizza</li>
+        <li class="menu">burgar</li>
+        <li class="menu">Garlic Naan</li>
+        <li class="menu">Gulab Jamun</li>
+    </ul>
+</section>
+<!-- The displayed text color is red.The internal CSS sets the paragraph color to blue, but the inline
+    style has higher priority in the CSS cascade, so the inline color: blue; overrides the internal CSS color: pink;. -->
+
+    
+</body>
+</html>
