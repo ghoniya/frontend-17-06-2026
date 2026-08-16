@@ -1,0 +1,56 @@
+body{
+    margin:0;
+    padding:0;
+    color:blue;
+
+}
+
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 40px auto;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+}
+
+/* The profile card text appears BLUE because the .profile-card class
+selector is more specific than the body selector. */
+
+.profile-card {
+    grid-column: 1 / -1; 
+    background-color: #bfe45b;
+}
+
+.playlist {
+    background-color: #dcfce7;
+}
+
+.trending {
+    background-color: #fef3c7;
+    padding: 25px;
+    border-radius: 12px;
+}
+
+h2 {
+    margin-bottom: 15px;
+    margin-left:2%;
+}
+
+p {
+    margin-bottom: 8px;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    
+}
+.playlist li{
+    color:rgb(15, 15, 15);
+
+}

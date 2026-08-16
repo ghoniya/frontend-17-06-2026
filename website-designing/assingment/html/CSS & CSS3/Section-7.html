@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Style7.css">
+
+      <style>
+        /* Internal CSS changes the playlist background to pink. */
+        .playlist {
+            background-color: #f9a8d4;
+        }
+    </style>
+  
+</head>
+<body>
+ <!-- 1.Create an HTML file with three sections: a profile card, a playlist list, and a trending hashtags sidebar. Link an external CSS file and give each section a different background color using only the external CSS.
+
+2.Add an internal <style> block to your HTML file and try to change the background color of the playlist list section to a new color. Observe which color is applied and explain why in a comment at the top of your CSS file.<br><br><em><strong>Hint:</strong> Internal styles may override external styles depending on the cascade rules.</em>
+
+3.Add an inline style directly to the trending hashtags sidebar to set its background color to pink. Check which background color is visible and write a one-line explanation in an HTML comment near that element.
+
+4.In your external CSS, set the font color for the whole page using the body selector. Then, add a specific color to the profile card section using a class selector. Which color is shown for text in the profile card? Why? Write your answer as a comment in your CSS file.<br><br><em><strong>Hint:</strong> This tests inheritance and specificity.</em>
+
+5.Given this scenario: Your .playlist-list class in external CSS sets color: blue, but the playlist items are still showing black text. Use the browser's DevTools Inspector to find out why your color is not applying, and fix the specificity issue by updating your CSS selector. -->
+<main class="container"> 
+<section class="profile-card">
+    <h2>arjit singh</h2>
+    <p>Music lover, creator, and digital explorer.</p>
+  </section>
+
+  <section class="playlist">
+    <h2>My Playlist</h2>
+    <ul>
+      <li>three little birds</li>
+      <li>dhamal</li>
+      <li>bagban</li>
+      <li>veer</li>
+    </ul>
+  </section>
+  <!-- inline CSS changes the playlist background to pink.  -->
+  <section class="trending" style="background-color: pink;">
+    <h2>Trending Hashtags</h2>
+      <ul>
+        <li>Music</li>
+        <li>Trending</li>
+        <li>WeekendVibes</li>
+        <li>NewMusic</li>
+        <li>Explore</li>
+      </ul>
+  </section>
+
+</main>
+    
+</body>
+</html>
