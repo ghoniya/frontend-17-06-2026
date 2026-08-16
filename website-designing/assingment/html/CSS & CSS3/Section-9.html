@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style9.css">
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+</head>
+<body>
+<!-- 1.Go to animista.net, pick a 'bounce' animation, and use the 'Generate CSS' feature to copy the animation code. Apply this animation to a 'Book Now' button on a mock BookMyShow homepage so the button bounces when hovered.
+
+2.Import GSAP via CDN into an HTML file and create a Flipkart-style product card that fades in and slides up when the page loads using GSAP's gsap.from() method.
+
+3.Write CSS media queries to change the layout of a simple navigation bar: show it as a horizontal bar on screens above 1024px, stack it vertically on screens between 768px and 1024px, and collapse it into a hamburger menu on screens below 768px.<br><br><em><strong>Hint:</strong> Use display: flex for desktop and display: block for mobile; you can use a placeholder icon for the hamburger.</em>
+
+4.Refactor your CSS for a sample Zomato restaurant listing page to use mobile-first design. Start with styles for mobile (320px), then add media queries for tablet (768px), laptop (1024px), and desktop (1200px) to adjust font sizes and grid columns.
+
+5.Use ChatGPT to suggest 3 best practices for combining CSS animations and media queries for performance on mobile devices, and implement one suggestion in your code. Paste the ChatGPT suggestion and show the code change you made. -->
+    <header class="navbar">
+        <div class="logo">book<span>my</span>show</div>
+        <nav>
+            <a href="#">Movies</a>
+            <a href="#">Events</a>
+            <a href="#">Plays</a>
+            <a href="#">Sports</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div>
+                <h1>Book your next movie experience</h1>
+                <p>Discover the latest movies and book your tickets today.</p>
+                <button class="book-now">Book Now</button>
+            </div>
+        </section>
+
+        <section class="movies">
+            <h2>Recommended Movies</h2>
+
+            <div class="movie-grid">
+                <article class="movie-card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfq9rihMmwRcDRkq7mlt06shungqmqvHV0O5jti6xXPw&s=10"height="500px">
+                    <h3>Adventure Night</h3>
+                    <button>Book Tickets</button>
+                </article>
+
+    
+                <article class="movie-card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAIbLCUlZRKutnspTP54axHUd7YPMlgDgWTcxkGx-PJA&s=10" height="500px">
+                    <h3>the line king</h3>
+                    <button>Book Tickets</button>
+                </article>
+                <article class="movie-card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqIFB_QZNhObRvHidmxstbIPieMuBkzX25jq1Sm12-aw&s=10" height="500px">
+                    <h3>herry pottle</h3>
+                    <button>Book Tickets</button>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <header class="navbar">
+        <div class="logo">Flipkart</div>
+    </header>
+
+    <main class="products">
+        <article class="product-card">
+            <div class="product-image">📱</div>
+
+            <h2>Smartphone Pro Max</h2>
+>
+
+            <div class="price">&#8377 24,999</div>
+
+            <button class="buy-button">
+                Buy Now
+            </button>
+        </article>
+    </main>
+
+    <nav class="navbar">
+        <div class="logo">MySite</div>
+    
+        <button class="hamburger" aria-label="Open menu">☰</button>
+    
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main class="container">
+
+        <h1 class="page-title"> The Grand Restaurants </h1>
+
+        <div class="restaurant-grid">
+
+            <div class="restaurant-card">
+                <div class="restaurant-card">
+                    <img src="https://png.pngtree.com/png-clipart/20250103/original/pngtree-indian-food-talley-curry-with-rice-png-image_6814445.png" class="restaurant-image">
+        
+
+                <div class="restaurant-info">
+                    <h2 class="restaurant-cuisine">Indian </h2>
+                    <p class="restaurant-price">&#8377 700 </p>
+                </div>
+            </div>
+
+            <div class="restaurant-card">
+                <div class="restaurant-card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNdkGok0R645skT2kymECjV44gdf9K3kiePj1AjYe4bw&s" class="restaurant-image">
+
+                <div class="restaurant-info">
+                    <h2 class="restaurant-cuisine">burger </h2>
+                    <p class="restaurant-price">&#8377 500 </p>
+                </div>
+            </div>
+
+                    <div class="restaurant-card">
+                        <div class="restaurant-card">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7wlfWHXV6L7Eu2vNJARgD8kHv3kW39ZyIsdQth0BxBA&s" class="restaurant-image">
+        
+                        <div class="restaurant-info">
+                            <h2 class="restaurant-cuisine">fast food </h2>
+                            <p class="restaurant-price">&#8377 300 </p>
+                        </div>
+                    </div>
+
+            <div class="restaurant-card">
+                <div class="restaurant-card">
+                    <img src="https://img.magnific.com/free-psd/top-view-delicious-pizza_23-2151868964.jpg?semt=ais_test_b&w=740&q=80" class="restaurant-image">
+
+                <div class="restaurant-info">
+                    <h2 class="restaurant-cuisine">Pizza </h2>
+                    <p class="restaurant-price">&#8377 500 </p>
+                </div>
+            </div>
+
+        </div>
+
+    </main>
+    <hr>
+    <div class="productcard">
+        <h2>Wireless Headphones</h2>
+        <p>Premium sound with long battery life.</p>
+        <strong>₹2,499</strong>
+    </div>
+
+</body>
+</html>
