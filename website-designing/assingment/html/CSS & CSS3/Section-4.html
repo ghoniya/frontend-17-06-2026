@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Style4.css">
+</head>
+<body>
+ <!-- 1.Create an HTML file with three sections: Home, Explore, and Profile. Use CSS to display thes
+ sections as block, inline, and inline-block elements respectively, and observe how their layout and sizing differ in the browser.
+
+2.Build a simple navigation bar like Instagram's top menu using inline-block display for each menu item, ensuring they appear side by side but allow custom width and height.
+
+3.Design a two-column layout similar to a Flipkart product listing page using float: left for the product list and float: right for a sidebar cart. Add enough content to both columns to see the float effect.
+
+4.Fix the common float collapsing issue by applying a clearfix technique to your two-column layout, so the parent container correctly wraps both floated columns.<br><br><em><strong>Hint:</strong> Use the ::after pseudo-element with clear: both in your CSS.</em>
+
+5.Write a short comparison (3-4 lines) explaining why floats are not ideal for layouts today and give one example of how Flexbox would simplify the two-column layout you just built. -->
+<section id="stn"> 
+<div class="home">
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+</div>
+<div class="Explore">
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. </p>
+</div>
+<div class="profile">
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+</div>
+</section>
+<hr>
+<section id="app"> 
+    <div class="logo">Instagram</div>
+    <div class="navbar">
+    <ul>
+        <li><a href="">home</a></li>
+        <li><a href="">reels</a></li>
+        <li><a href="">message</a></li>
+        <li><a href="">profile</a></li>
+        
+    </ul>
+</div>
+</section>
+<hr>
+<header class="header">
+    Flipkart-Style Store
+  </header>
+
+  <div class="container">
+    <section class="products">
+      <h2>Products</h2>
+
+<div class="product">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsuHAJCW-qz5sZZQS8fORe9zNEXzjZm9WTJerrJwOx1A&s=10" alt="Headphones" width="15%">
+    <h2>Wireless Headphones</h2>
+    <p class="price">&#8377 2,499</p>
+    
+    
+  </div>
+  <div class="product">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPL2Xq8dKg609sgrVxY3UanNuCfZYszznbUP6UjibCbw&s=10" alt="Smartwatch" width="15%">
+    <h2>Smartwatch</h2>
+    <p class="price">&#8377 3,499</p>
+  </div>
+  <div class="product">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDH3PZCpS7WGnIjabjf4bNFpKL8--X7UiG0A3sBRg49w&s=10" alt="Smartphone" width="15%">
+    <h2>Smartwatch</h2>
+    <p class="price">&#8377 25000</p>
+    
+  
+  </div>
+    </section>
+  <aside class="cart">
+    <h2>🛒 My Cart</h2>
+
+    <div class="cart-item">
+        <strong>Smartphone Pro Max</strong>
+        <p>&#8377 29,999</p>
+    </div>
+  <div class="cart-item">
+    <strong>Wireless Headphones</strong>
+    <p>&#8377 2,499</p>
+  </div>
+
+  <div class="cart-item">
+    <strong>Smartwatch</strong>
+    <p> &#8377 3,999 </p>
+  </div>
+
+</p>Floats were originally designed for wrapping text around images, so they can make modern page layouts harder to manage and often require clearfix hacks.
+
+Flexbox is designed specifically for arranging elements in rows and columns, making responsive layouts much simpler.
+
+This also makes alignment, spacing, and responsive behavior easier to handle.</p>
+
+    
+</body>
+</html>
