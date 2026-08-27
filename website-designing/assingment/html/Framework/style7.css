@@ -1,0 +1,248 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+
+header {
+    background: red;
+    padding: 15px 20px;
+}
+
+.menu-toggle {
+    display: block;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+.nav-links {
+    display: none;
+    list-style: none;
+    padding: 0;
+    margin: 15px 0 0;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+}
+
+.hero {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.perent {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 5%;
+}
+
+.child1 {
+    width: 20%;
+    height: auto;
+    border-radius: 20px;
+    margin: 5px;
+    margin-top: 3%;
+    border: 2px solid rgb(235, 204, 105);
+
+
+}
+
+.child2 {
+    width: 20%;
+    height: auto;
+    border-radius: 20px;
+    margin: 5px;
+    margin-top: 3%;
+    border: 2px solid rgb(235, 204, 105);
+}
+
+.child3 {
+    width: 20%;
+    height: auto;
+    border-radius: 20px;
+    margin: 5px;
+    margin-top: 3%;
+    border: 2px solid rgb(235, 204, 105)
+}
+
+.child4 {
+    width: 20%;
+    height: auto;
+    border-radius: 20px;
+    margin: 5px;
+    margin-top: 3%;
+    border: 2px solid rgb(235, 204, 105);
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+}
+
+/* mobile breakpoints media query */
+@media only screen and (min-width:320px) and (max-width:480px) {
+    .menu-toggle {
+        display: none;
+    }
+
+    .nav-links {
+        display: flex;
+        flex-direction: row;
+        margin: 0;
+        gap: 20px;
+    }
+
+    .perent {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .child1 {
+        width: 60%;
+        height: auto;
+        border-radius: 20px;
+        margin: 5px;
+        margin-top: 3%;
+        border: 2px solid rgb(235, 204, 105);
+        margin-left: 40px;
+
+
+    }
+
+    .child2 {
+        width: 60%;
+        height: auto;
+        border-radius: 20px;
+        margin: 5px;
+        margin-top: 3%;
+        border: 2px solid rgb(235, 204, 105);
+        margin-left: 40px;
+    }
+
+    .child3 {
+        width: 60%;
+        height: auto;
+        border-radius: 20px;
+        margin: 5px;
+        margin-top: 3%;
+        border: 2px solid rgb(235, 204, 105);
+        margin-left: 40px;
+    }
+
+    .child4 {
+        width: 60%;
+        height: auto;
+        border-radius: 20px;
+        margin: 5px;
+        margin-top: 3%;
+        border: 2px solid rgb(235, 204, 105);
+        margin-left: 40px;
+    }
+
+    img {
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+
+/* tablet breakpoints media query */
+@media only screen and (min-width:481px) and (max-width:768px) {
+    img {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .menu-toggle {
+        display: none;
+    }
+
+    .nav-links {
+        display: flex;
+        flex-direction: row;
+        margin: 0;
+        gap: 20px;
+    }
+
+    .perent {
+        width: 100%;
+        height: auto;
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+
+    .child1 {
+        width: 40%;
+        height: auto;
+        border-radius: 20px;
+        margin: 3px;
+        margin-top: 3%;
+        border: 2px solid rgb(235, 204, 105);
+        margin-left: 5px;
+
+
+    }
+
+    .child2 {
+        width: 40%;
+        height: auto;
+        border-radius: 20px;
+        margin: 3px;
+        margin-top: 3%;
+        border: 2px solid rgb(235, 204, 105);
+        margin-left: 5px;
+    }
+
+    .child3 {
+        width: 40%;
+        height: auto;
+        border-radius: 20px;
+        margin: 3px;
+        margin-top: 3%;
+        border: 2px solid rgb(235, 204, 105);
+        margin-left: 5px;
+    }
+
+    .child4 {
+        width: 40%;
+        height: auto;
+        border-radius: 20px;
+        margin: 3px;
+        margin-top: 3%;
+        border: 2px solid rgb(235, 204, 105);
+        margin-left: 5px;
+    }
+
+}
+
+/* Desktop: 1024px and above */
+@media (min-width: 1024px) {
+    header {
+        padding: 20px 60px;
+    }
+
+    .nav-links {
+        gap: 45px;
+    }
+
+    .navbar {
+        padding: 0 20px;
+    }
+
+    .hero {
+        padding: 100px 60px;
+    }
+}
