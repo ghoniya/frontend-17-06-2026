@@ -1,0 +1,14 @@
+<!-- Create an array of product names like ['Shoes', 'T-shirt', 'Watch', 'Bag', 'Sunglasses']. Use a for loop to display each product in the browser, but stop displaying further products if you reach 'Watch' (use break). -->
+
+<script>
+    let scores = [45, 0, 78, 102, 0, 34];
+
+for (let score of scores) {
+    // Skip zero scores
+    if (score === 0) {
+        continue;
+    }
+
+    console.log(score);
+}
+</script>

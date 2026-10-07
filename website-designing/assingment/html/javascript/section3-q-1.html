@@ -1,0 +1,24 @@
+<!-- Create an HTML file with a script that asks the user for their favorite food using prompt(), then uses if-else to display an alert saying 'Great choice!' if they enter 'pizza', or 'Try pizza next time!' for any other input. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Favorite Food</title>
+</head>
+<body>
+
+    <h1>Favorite Food</h1>
+
+    <script>
+        let food = prompt("What is your favorite food?");
+
+        if (food.toLowerCase() === "pizza") {
+            alert("Great choice!");
+        } else {
+            alert("Try pizza next time!");
+        }
+    </script>
+
+</body>
+</html>

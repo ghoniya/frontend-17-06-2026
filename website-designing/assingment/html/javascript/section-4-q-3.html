@@ -1,0 +1,19 @@
+<!-- Build a feature that asks the user to enter 5 shopping items (one by one) using prompt(), stores them in an array, and then uses a do-while loop to display each item with its position (e.g., 1. Pizza) in the console.<br><br><em><strong>Hint:</strong> Use do-while to ensure the loop runs at least once and continues until all items are displayed.</em> -->
+
+<script>
+    let shoppingItems = [];
+
+// Ask the user to enter 5 shopping items
+for (let i = 0; i < 5; i++) {
+    let item = prompt("Enter shopping item " + (i + 1) + ":");
+    shoppingItems.push(item);
+}
+
+// Display items using do-while loop
+let i = 0;
+
+do {
+    console.log((i + 1) + ". " + shoppingItems[i]);
+    i++;
+} while (i < shoppingItems.length);
+</script>

@@ -1,0 +1,38 @@
+<!-- Using a while loop, display all the usernames from this array: ['virat_kohli', 'msdhoni', 'hardik_pandya', 'rohit_sharma', 'shubman_gill'] on the webpage inside an unordered list. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usernames List</title>
+</head>
+<body>
+
+    <h2>Instagram Usernames</h2>
+
+    <ul id="userList"></ul>
+
+    <script>
+        let usernames = [
+            'virat_kohli',
+            'msdhoni',
+            'hardik_pandya',
+            'rohit_sharma',
+            'shubman_gill'
+        ];
+
+        let i = 0;
+        let list = document.getElementById("userList");
+
+        while (i < usernames.length) {
+            let li = document.createElement("li");
+            li.textContent = usernames[i];
+            list.appendChild(li);
+
+            i++;
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,19 @@
+<!-- Given an array of cricket scores: [45, 0, 78, 102, 0, 34], use a for-of loop to print only the non-zero scores. Use the continue statement to skip zero scores. -->
+
+<script>
+    let shoppingItems = [];
+
+// Ask the user to enter 5 shopping items
+for (let i = 0; i < 5; i++) {
+    let item = prompt("Enter shopping item " + (i + 1) + ":");
+    shoppingItems.push(item);
+}
+
+// Display items using do-while loop
+let i = 0;
+
+do {
+    console.log((i + 1) + ". " + shoppingItems[i]);
+    i++;
+} while (i < shoppingItems.length);
+</script>

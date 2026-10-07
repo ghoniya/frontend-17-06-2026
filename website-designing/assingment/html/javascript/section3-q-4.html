@@ -1,0 +1,60 @@
+<!-- Create a function getDayOffer() that uses switch-case to display a special offer message based on the current day of the week (e.g., 'Monday Madness', 'Friday Fiesta', etc.), and call this function when the page loads. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day Offer</title>
+</head>
+<body>
+
+    <h1>Today's Special Offer</h1>
+
+    <script>
+        function getDayOffer() {
+            let day = new Date().getDay();
+            let offer;
+
+            switch (day) {
+                case 0:
+                    offer = "Sunday Special";
+                    break;
+
+                case 1:
+                    offer = "Monday Madness";
+                    break;
+
+                case 2:
+                    offer = "Tuesday Treat";
+                    break;
+
+                case 3:
+                    offer = "Wednesday Wonders";
+                    break;
+
+                case 4:
+                    offer = "Thursday Deals";
+                    break;
+
+                case 5:
+                    offer = "Friday Fiesta";
+                    break;
+
+                case 6:
+                    offer = "Saturday Surprise";
+                    break;
+
+                default:
+                    offer = "Special Offer";
+            }
+
+            alert(offer);
+        }
+
+        // Call the function when the page loads
+        getDayOffer();
+    </script>
+
+</body>
+</html>

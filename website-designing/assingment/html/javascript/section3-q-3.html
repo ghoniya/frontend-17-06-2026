@@ -1,0 +1,29 @@
+<!-- Write a script that takes a user's age as input using prompt() and uses nested if-else to display: 'You can create an Instagram account' if 13 or older, 'You can use YouTube Kids' if age is between 7 and 12, or 'Ask your parents for help' if younger. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Check</title>
+</head>
+<body>
+
+    <h1>Age Check</h1>
+
+    <script>
+        let age = Number(prompt("Enter your age:"));
+
+        if (age >= 13) {
+            alert("You can create an Instagram account");
+        } else {
+            if (age >= 7) {
+                alert("You can use YouTube Kids");
+            } else {
+                alert("Ask your parents for help");
+            }
+        }
+    </script>
+
+</body>
+</html>s

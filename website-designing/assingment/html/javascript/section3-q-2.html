@@ -1,0 +1,36 @@
+<!-- Build a JavaScript function showGreeting() that checks the current hour using new Date() and displays 'Good Morning', 'Good Afternoon', or 'Good Evening' in an alert, similar to how Zomato greets users at different times.<br><br><em><strong>Hint:</strong> Morning: 5-11, Afternoon: 12-17, Evening: 18-23, Night: 0-4.</em> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zomato Greeting</title>
+</head>
+<body>
+
+    <h1>Welcome to Zomato</h1>
+
+    <script>
+        function showGreeting() {
+            let currentHour = new Date().getHours();
+
+            if (currentHour >= 5 && currentHour <= 11) {
+                alert("Good Morning");
+            } 
+            else if (currentHour >= 12 && currentHour <= 17) {
+                alert("Good Afternoon");
+            } 
+            else if (currentHour >= 18 && currentHour <= 23) {
+                alert("Good Evening");
+            } 
+            else {
+                alert("Good Night");
+            }
+        }
+
+        showGreeting();
+    </script>
+
+</body>
+</html>
