@@ -1,0 +1,70 @@
+<script>
+//     1.Declare three variables using var, let, and const to store your name, your age, and your favorite app, then log all three values to the console.
+
+// 2.Create an array called foodItems with 4 of your favorite Zomato dishes as strings, and an object called userProfile with keys: username (string), isPremium (boolean), and walletBalance (number). Log both to the console.
+
+// 3.Build a Flipkart-style cart total calculator: declare variables for itemPrice (number), quantity (number), and GST (18%), then use arithmetic operators to calculate and log the final bill amount.
+
+// 4.Write a function isEligibleForDiscount that takes a user's walletBalance and returns true if the balance is greater than 100, otherwise false. Use a ternary operator and log the result for balances of 50 and 150.
+
+// 5.Create a variable called isLoggedIn and set it to true. Using logical operators, write a condition that checks if isLoggedIn is true and walletBalance is at least 200, then log 'Access Granted' or 'Access Denied' accordingly.<br><br><em><strong>Hint:</strong> Use the && operator to combine both conditions.</em>
+
+    // Quatation-1
+
+    // var name = "Taslim";
+    // var age = "25"
+    // var app = "instagram"
+    // console.log(name);
+    // console.log(age);
+    // console.log(app);
+
+    // let name = "Taslim";
+    // let  age = "25"
+    // let  app = "instagram"
+    // console.log(name);
+    // console.log(age);
+    // console.log(app);
+
+    const name = "Taslim";
+    const  age = "25"
+    const  app = "instagram"
+    console.log(name);
+    console.log(age);
+    console.log(app);
+
+    // Quatation-2
+
+    let foodItems=["pitza","sandwiches","burger","noodels"];
+    const userProfile = {
+    username: "Taslim",
+    isPremium: true,
+    walletBalance: 500
+    };
+
+    console.log(foodItems);
+    console.log(userProfile);
+
+    // Quatation-3
+    let foodItem=['Pizza', 'Burger', 'Dosa', 'Pasta', 'Biryani'];
+    console.log(foodItem.slice(1,4  ));
+    // Quatation-4
+
+    var product=[{name: 'Headphones', price: 1200},{name: "Keyboard", price: 800},{name: "Mouse", price: 500} ];
+    console.log(product);
+    // Quatation-5
+
+    const movies = [
+    { title: "Inception", rating: 4.5 },
+    { title: "Avatar", rating: 3.8 },
+    { title: "veer", rating: 4.7 },
+    { title: "Titanic", rating: 4.0 },
+    { title: "The Dark Knight", rating: 4.9 }
+];
+const topMovies = movies.filter(movie => movie.rating > 4.0);
+
+topMovies.forEach(movie => {
+    console.log(movie.title);
+});
+
+
+</script>
