@@ -1,0 +1,14 @@
+<!-- Create an array of objects called products, where each object has name and price properties (e.g., name: 'Headphones', price: 1200). Use the sort() method to sort products by price in ascending order and log the sorted array.<br><br><em><strong>Hint:</strong> You will need to provide a compare function to sort objects by price.</em> -->
+ <script>
+    let products = [
+    { name: 'Headphones', price: 1200 },
+    { name: 'Keyboard', price: 800 },
+    { name: 'Mouse', price: 500 },
+    { name: 'Monitor', price: 5000 }
+];
+
+// Sort products by price in ascending order
+products.sort((a, b) => a.price - b.price);
+
+console.log(products);
+ </script>

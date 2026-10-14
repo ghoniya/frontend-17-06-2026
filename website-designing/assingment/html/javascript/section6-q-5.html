@@ -1,0 +1,16 @@
+<!-- Use the filter() method on an array of movies (each with title and rating) to get only movies with a rating above 4.0, and display their titles in the console. -->
+ <script>
+    let movies = [
+    { title: 'veer', rating: 4.5 },
+    { title: 'Titanic', rating: 3.8 },
+    { title: 'raaz', rating: 4.8 },
+    { title: 'bagban', rating: 3.9 },
+    { title: 'Interstellar', rating: 4.7 }
+];
+
+// Filter movies with a rating above 4.0
+let topMovies = movies.filter(movie => movie.rating > 4.0);
+
+// Display movie titles in the console
+topMovies.forEach(movie => console.log(movie.title));
+ </script>

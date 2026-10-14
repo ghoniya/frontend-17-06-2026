@@ -1,0 +1,12 @@
+<!-- Build a function applyCoupon that takes two parameters: cartTotal and couponValue, where couponValue should have a default value of 0. The function should return cartTotal minus couponValue. Call the function with and without the couponValue argument to show both cases. -->
+ <script>
+    function applyCoupon(cartTotal, couponValue = 0) {
+    return cartTotal - couponValue;
+}
+
+// Call with a coupon
+console.log("Total after coupon:", applyCoupon(1000, 200));
+
+// Call without a coupon
+console.log("Total without coupon:", applyCoupon(1000));
+ </script>

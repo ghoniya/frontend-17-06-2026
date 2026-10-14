@@ -1,0 +1,11 @@
+<!-- Refactor the following code to improve modularity: Instead of having one function calculateOrderTotal(price, quantity, discount), break it into three smaller functions: calculateSubtotal, calculateDiscount, and calculateOrderTotal. Each function should handle only one part of the logic.<br><br><em><strong>Hint:</strong> calculateSubtotal multiplies price and quantity, calculateDiscount applies a percentage discount, and calculateOrderTotal uses both to return the final amount.</em> -->
+ <script>
+    function calculateSubtotal(price, quantity) {
+    return price * quantity;
+}
+
+// 2. Calculate discount amount
+function calculateDiscount(subtotal, discount) {
+    return subtotal * (discount / 100);
+}
+ </script>

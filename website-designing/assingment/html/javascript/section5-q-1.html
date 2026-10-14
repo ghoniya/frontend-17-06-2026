@@ -1,0 +1,31 @@
+<!-- Create a function named calculateFinalPrice that takes two parameters: itemPrice and deliveryCharge, and returns the total amount. Call the function with values of your choice and display the result using alert(). -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Product List</title>
+</head>
+<body>
+
+    <h2>Products</h2>
+    <ul id="productList"></ul>
+
+    <script>
+        let products = ['Shoes', 'T-shirt', 'Watch', 'Bag', 'Sunglasses'];
+
+        let list = document.getElementById("productList");
+
+        for (let i = 0; i < products.length; i++) {
+
+            if (products[i] === 'Watch') {
+                break;
+            }
+
+            let li = document.createElement("li");
+            li.textContent = products[i];
+            list.appendChild(li);
+        }
+    </script>
+
+</body>
+</html>
