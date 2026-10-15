@@ -1,0 +1,25 @@
+<!-- Create an HTML page with a heading that says 'Welcome to My Playlist'. Use getElementById in a script to change the heading text to 'Your Spotify Playlist' when a button is clicked. -->
+
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>My Playlist</title>
+ </head>
+ <body>
+ 
+     <h1 id="playlistHeading">Welcome to My Playlist</h1>
+ 
+     <button onclick="changeHeading()">Change Playlist</button>
+ 
+     <script>
+         function changeHeading() {
+             document.getElementById("playlistHeading").textContent =
+                 "Your Spotify Playlist";
+         }
+     </script>
+ 
+ </body>
+ </html>
+ 

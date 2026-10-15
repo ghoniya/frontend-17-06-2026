@@ -1,0 +1,42 @@
+<!-- Build a mini form with a dropdown to select your favorite IPL team. Use the onchange event to display the selected team name below the dropdown each time the selection changes. -->
+ 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Favorite IPL Team</title>
+</head>
+<body>
+
+    <h2>Select Your Favorite IPL Team</h2>
+
+    <label for="iplTeam">Choose a team:</label>
+
+    <select id="iplTeam" onchange="showTeam()">
+        <option value="">-- Select Team --</option>
+        <option value="Chennai Super Kings">Chennai Super Kings</option>
+        <option value="Mumbai Indians">Mumbai Indians</option>
+        <option value="Royal Challengers Bengaluru">Royal Challengers Bengaluru</option>
+        <option value="Rajasthan Royals">Rajasthan Royals</option>
+        <option value="Gujarat Titans">Gujarat Titans</option>
+        
+    </select>
+
+    <p id="result"></p>
+
+    <script>
+        function showTeam() {
+            let team = document.getElementById("iplTeam").value;
+
+            if (team !== "") {
+                document.getElementById("result").textContent =
+                    "Your favorite IPL team is: " + team;
+            } else {
+                document.getElementById("result").textContent = "";
+            }
+        }
+    </script>
+
+</body>
+</html>

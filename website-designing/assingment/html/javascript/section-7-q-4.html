@@ -1,0 +1,81 @@
+<!-- Create a Zomato-style restaurant list with three restaurant names in separate divs. When a user clicks any restaurant name, use querySelector to add a 'selected' class to only that div, and remove it from others.<br><br><em><strong>Constraint:</strong> Only one restaurant should have the 'selected' class at a time.</em> button is clicked. -->
+ 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zomato Restaurant List</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f8f8;
+            padding: 30px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #e23744;
+        }
+
+        .restaurant {
+            background-color: white;
+            padding: 20px;
+            margin: 15px auto;
+            max-width: 350px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .restaurant:hover {
+            background-color: #ffe8e8;
+        }
+
+        .selected {
+            background-color: #e23744;
+            color: white;
+            border: 2px solid #b51f2a;
+        }
+
+        .selected:hover {
+            background-color: #e23744;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Zomato Restaurants</h1>
+    <p>Select your favorite restaurant</p>
+
+    <div class="restaurant" onclick="selectRestaurant(this)">
+        Pizza Palace
+    </div>
+
+    <div class="restaurant" onclick="selectRestaurant(this)">
+        Burger House
+    </div>
+
+    <div class="restaurant" onclick="selectRestaurant(this)">
+        Dosa Corner
+    </div>
+
+    <script>
+        function selectRestaurant(selectedDiv) {
+
+            // Remove selected class from the current selection
+            const currentSelected = document.querySelector(".selected");
+
+            if (currentSelected) {
+                currentSelected.classList.remove("selected");
+            }
+
+            // Add selected class to the clicked restaurant
+            selectedDiv.classList.add("selected");
+        }
+    </script>
+
+</body>
+</html>

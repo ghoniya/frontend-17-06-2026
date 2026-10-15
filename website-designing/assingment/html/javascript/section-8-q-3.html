@@ -1,0 +1,52 @@
+<!-- Create a list of three songs (as <li> elements) on a page. Use addEventListener in JavaScript to highlight a song (change its background color) when it is clicked, and remove the highlight from any previously selected song.<br><br><em><strong>Hint:</strong> Use event.target and loop through the list items to manage the highlight.</em> -->
+    
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Song Playlist</title>
+
+    <style>
+        li {
+            padding: 10px;
+            margin: 5px;
+            cursor: pointer;
+            width: 200px;
+        }
+
+        .highlight {
+            background-color: lightblue;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>My Favorite Songs</h2>
+
+    <ul id="songList">
+        <li>Shape of You</li>
+        <li>Perfect</li>
+        <li>Believer</li>
+    </ul>
+
+    <script>
+        let songs = document.querySelectorAll("#songList li");
+
+        songs.forEach(function(song) {
+            song.addEventListener("click", function(event) {
+
+                // Remove highlight from all songs
+                songs.forEach(function(item) {
+                    item.classList.remove("highlight");
+                });
+
+                // Highlight the clicked song
+                event.target.classList.add("highlight");
+            });
+        });
+    </script>
+
+</body>
+</html>

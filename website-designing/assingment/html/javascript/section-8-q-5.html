@@ -1,0 +1,35 @@
+<!-- Create a simple form with an input for 'Username' and a submit button. Prevent the default form submission using event.preventDefault() and show an alert with the entered username instead. -->
+ 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Username Form</title>
+</head>
+<body>
+
+    <h2>Username Form</h2>
+
+    <form id="usernameForm">
+        <label for="username">Username:</label>
+        <input type="text" id="username" placeholder="Enter your username" required>
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <script>
+        let form = document.getElementById("usernameForm");
+
+        form.addEventListener("submit", function(event) {
+            event.preventDefault();
+
+            let username = document.getElementById("username").value;
+
+            alert("Your username is: " + username);
+        });
+    </script>
+
+</body>
+</html>
+ 

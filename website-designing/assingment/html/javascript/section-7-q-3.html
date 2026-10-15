@@ -1,0 +1,55 @@
+<!-- Add a button labeled 'Dark Mode' to your page. When clicked, use getElementById to add a 'dark-theme' class to the body, changing the background and text color using CSS.<br><br><em><strong>Hint:</strong> Define the .dark-theme class in your CSS with a dark background and light text.</em> -->
+ 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dark Mode Example</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: white;
+            color: black;
+            text-align: center;
+            padding: 50px;
+            transition: 0.3s;
+        }
+
+        .dark-theme {
+            background-color: #121212;
+            color: white;
+        }
+
+        button {
+            background-color: #2874f0;
+            color: white;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #1557bd;
+        }
+    </style>
+</head>
+<body id="pageBody">
+
+    <h1>Welcome to My Website</h1>
+    <p>Click the button below to enable Dark Mode.</p>
+
+    <button onclick="enableDarkMode()">Dark Mode</button>
+
+    <script>
+        function enableDarkMode() {
+            document.getElementById("pageBody").classList.add("dark-theme");
+        }
+    </script>
+
+</body>
+</html>
+
+

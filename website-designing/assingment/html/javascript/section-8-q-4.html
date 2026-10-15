@@ -1,0 +1,35 @@
+<!-- Make a parent <div> with three child buttons (e.g., 'Add to Cart', 'Wishlist', 'Share'). Add a single click event listener to the parent using addEventListener, and display which button was clicked using event bubbling.<br><br><em><strong>Hint:</strong> Use event.target to get the clicked button's text.</em> -->
+    
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Bubbling Example</title>
+</head>
+<body>
+
+    <h2>Product Actions</h2>
+
+    <div id="parent">
+        <button>Add to Cart</button>
+        <button>Wishlist</button>
+        <button>Share</button>
+    </div>
+
+    <p id="result">Click any button to see the result.</p>
+
+    <script>
+        let parent = document.getElementById("parent");
+        let result = document.getElementById("result");
+
+        parent.addEventListener("click", function(event) {
+            if (event.target.tagName === "BUTTON") {
+                result.textContent =
+                    "You clicked: " + event.target.textContent;
+            }
+        });
+    </script>
+
+</body>
+</html>
