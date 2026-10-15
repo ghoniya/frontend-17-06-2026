@@ -1,0 +1,31 @@
+<!-- Create an HTML form named myLoginForm with email and password fields, and add a button that calls a JavaScript function validateLoginForm() on click to prevent form submission if any field is empty. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+</head>
+<body>
+   <form> </form>
+   <input type="text"placeholder="email">
+   <input type="password" placeholder="password">
+   <button type="button" onclick="validateLoginForm()">Login</button>
+</form>
+   
+<script>
+   function validateLoginForm() {
+       let email = document.forms["myLoginForm"]["email"].value.trim();
+       let password = document.forms["myLoginForm"]["password"].value.trim();
+
+       if (email === "" || password === "") {
+           alert("Please fill in both email and password fields.");
+           return false;
+       }
+
+       alert("Form validation successful!");
+       return true;
+   }
+</script>
+</body>
+</html>

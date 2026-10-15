@@ -1,0 +1,76 @@
+<!-- Add password validation to your form: use a regex in JavaScript to ensure the password is at least 8 characters, contains at least one uppercase letter, one lowercase letter, and one number; show a custom error message below the password field using innerHTML if the rule is not met.<br><br><em><strong>Hint:</strong> Try regex: /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{8,}$/</em> -->
+ 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Validation</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 30px;
+        }
+
+        input {
+            padding: 8px;
+            margin-top: 5px;
+        }
+
+        button {
+            padding: 8px 15px;
+            cursor: pointer;
+        }
+
+        .error {
+            color: red;
+            font-size: 14px;
+        }
+
+        .success {
+            color: green;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Password Validation Form</h2>
+
+    <form onsubmit="return validatePassword()">
+        <label for="password">Password:</label>
+        <br>
+
+        <input
+            type="password"
+            id="password"
+            placeholder="Enter your password"
+        >
+
+        <p id="passwordError" class="error"></p>
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <script>
+        function validatePassword() {
+            let password = document.getElementById("password").value;
+
+            let passwordPattern = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{8,}$/;
+
+            if (!passwordPattern.test(password)) {
+                document.getElementById("passwordError").innerHTML =
+                    "Password must be at least 8 characters long and contain at least one uppercase letter, one lowercase letter, and one number.";
+
+                return false;
+            } else {
+                document.getElementById("passwordError").innerHTML =
+                    "<span class='success'>Password is valid!</span>";
+
+                return false;
+            }
+        }
+    </script>
+
+</body>
+</html>

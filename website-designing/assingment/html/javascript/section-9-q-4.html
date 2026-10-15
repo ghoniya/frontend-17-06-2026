@@ -1,0 +1,158 @@
+<!-- Simulate a Flipkart-style sign up: when the user submits the form, display a green success message if both email and password are valid, or show specific error messages under each field using innerHTML if not. -->
+ 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flipkart Style Sign Up</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f1f3f6;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        .signup-box {
+            background-color: white;
+            width: 350px;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #2874f0;
+            text-align: center;
+        }
+
+        label {
+            display: block;
+            margin-top: 15px;
+            font-weight: bold;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-top: 6px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            margin-top: 20px;
+            background-color: #fb641b;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #e85b16;
+        }
+
+        .error {
+            color: red;
+            font-size: 13px;
+            margin-top: 5px;
+        }
+
+        .success {
+            color: green;
+            text-align: center;
+            font-weight: bold;
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="signup-box">
+        <h2>Flipkart Sign Up</h2>
+        <p>Create your account</p>
+
+        <form id="signupForm" novalidate>
+            <label for="email">Email Address</label>
+            <input
+                type="text"
+                id="email"
+                placeholder="Enter your email"
+            >
+            <div id="emailError" class="error"></div>
+
+            <label for="password">Password</label>
+            <input
+                type="password"
+                id="password"
+                placeholder="Create a password"
+            >
+            <div id="passwordError" class="error"></div>
+
+            <button type="submit">Sign Up</button>
+
+            <div id="successMessage" class="success"></div>
+        </form>
+    </div>
+
+    <script>
+        document.getElementById("signupForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+
+            let email = document.getElementById("email").value.trim();
+            let password = document.getElementById("password").value;
+
+            let emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+            let passwordPattern = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{8,}$/;
+
+            let emailError = document.getElementById("emailError");
+            let passwordError = document.getElementById("passwordError");
+            let successMessage = document.getElementById("successMessage");
+
+            // Clear previous messages
+            emailError.innerHTML = "";
+            passwordError.innerHTML = "";
+            successMessage.innerHTML = "";
+
+            let isValid = true;
+
+            // Validate email
+            if (email === "") {
+                emailError.innerHTML = "Email is required.";
+                isValid = false;
+            } else if (!emailPattern.test(email)) {
+                emailError.innerHTML = "Please enter a valid email address.";
+                isValid = false;
+            }
+
+            // Validate password
+            if (password === "") {
+                passwordError.innerHTML = "Password is required.";
+                isValid = false;
+            } else if (!passwordPattern.test(password)) {
+                passwordError.innerHTML =
+                    "Password must contain at least 8 characters, one uppercase letter, one lowercase letter, and one number.";
+                isValid = false;
+            }
+
+            // Display result
+            if (isValid) {
+                successMessage.innerHTML =
+                    "Sign up successful! Your details are valid.";
+            }
+        });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!-- Write a JavaScript function validateEmailFormat() that checks if the value entered in an email input matches a standard email pattern using regex, and displays an error message using innerHTML if invalid. -->
+ 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Validation</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 30px;
+        }
+
+        .error {
+            color: red;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Email Validation Form</h2>
+
+    <label for="email">Enter Email:</label>
+    <input type="text" id="email" placeholder="example@gmail.com">
+
+    <button type="button" onclick="validateEmailFormat()">
+        Validate Email
+    </button>
+
+    <p id="errorMessage" class="error"></p>
+
+    <script>
+        function validateEmailFormat() {
+            let email = document.getElementById("email").value;
+
+            let emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+            if (!emailPattern.test(email)) {
+                document.getElementById("errorMessage").innerHTML =
+                    "Please enter a valid email address.";
+            } else {
+                document.getElementById("errorMessage").innerHTML =
+                    "";
+                alert("Email address is valid!");
+            }
+        }
+    </script>
+
+</body>
+</html>
